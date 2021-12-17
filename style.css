@@ -1,0 +1,46 @@
+html {
+	scroll-behavior: smooth;
+	font-size: 14px;
+}
+
+body {
+	margin: 0;
+	padding: 0 1rem;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+ul li {
+	margin-left: 1rem;
+}
+
+section {
+	border-top: 2px solid #f3f3f3;
+	height: 25vw;
+	padding: 1rem 2rem;
+}
+
+.section-mission {
+	background-color: #ffe3e8;
+}
+
+.section-problem {
+	background-color: #dadfff;
+}
+
+.section-beliefs {
+	background-color: #e1fff5;
+}
+
+.section-contact {
+	background-color: #feffde;
+}
