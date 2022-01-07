@@ -10,38 +10,149 @@
 
   <body>
     <header>
-      <p>logo</p>
-
-      <nav role="navigation" class="navbar">
-        <ul>
-          <li><a href="#mission">Our Mission</a></li>
-          <li><a href="#problem">Problem Statement</a></li>
-          <li><a href="#beliefs">Core Beliefs</a></li>
-          <li><a href="#contact">Get in touch</a></li>
-        </ul>
-      </nav>
+      <div class="header container">
+        <h1 class="logo">Future Foundation</h1>
+        <a href="https://discord.gg/D4pN7YNY6Q" target="_blank"
+        >Join the community</a
+      >
+      </div>
     </header>
 
     <main>
-      <section class="section-hero">
-        <p>hero image</p>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-text">
+            We support web3 × social impact organizations and its broader
+            ecosystem
+          </h1>
+          <div class="hero-imgContainer">
+            <img src="images/hero_bg.jpg" class="hero-bg" alt="hero" />
+            <img src="images/bill.png" class="hero-icon hero-bill" alt="bill" />
+            <img
+              src="images/heart.png"
+              class="hero-icon hero-heart"
+              alt="heart"
+            />
+            <img
+              src="images/light.png"
+              class="hero-icon hero-light"
+              alt="light"
+            />
+            <img
+              src="images/megaphone.png"
+              class="hero-icon hero-megaphone"
+              alt="megaphone"
+            />
+            <img
+              src="images/school.png"
+              class="hero-icon hero-school"
+              alt="school"
+            />
+          </div>
+        </div>
       </section>
 
-      <section id="mission" class="section-mission">
-        <p>mission statement</p>
+      <section class="intro">
+        <div class="container">
+          <p class="intro-text">
+            We want to figure out how we can best help web3 x social impact
+            organizations grow - whether it is through capital, capacity
+            building, access to specific expertise, or something else - and
+            achieve their respective missions.
+          </p>
+        </div>
       </section>
 
-      <section id="problem" class="section-problem">
-        <p>problem statement</p>
-      </section>
+      <section class="connect">
+        <div class="container">
+          <div class="connect-texts">
+            <div class="connect-box">
+              <img
+                src="images/megaphone_dark.png"
+                class="connect-icon"
+                alt="megaphone"
+              />
+              <h3 class="connect-subHeading">Hop into the Discord</h3>
+              <p class="connect-text">
+                Interested in exploring the web3 × social impact space and
+                meeting some of the leaders in this space?
+              </p>
+            </div>
+            <div class="connect-box">
+              <img
+                src="images/heart_dark.png"
+                class="connect-icon"
+                alt="heart"
+              />
+              <h3 class="connect-subHeading">Join the Roster</h3>
+              <p class="connect-text">
+                Want to collaborate on social impact? We're looking for people
+                with skills in web3 and the social impact space.
+              </p>
+            </div>
+            <div class="connect-box">
+              <img
+                src="images/light_dark.png"
+                class="connect-icon"
+                alt="light"
+              />
+              <h3 class="connect-subHeading">Say Hello</h3>
+              <p class="connect-text">
+                A web3-native or web3-curious social impact organization? We'd
+                love to work with you.
+              </p>
+            </div>
+          </div>
 
-      <section id="beliefs" class="section-beliefs">
-        <p>our core beliefs</p>
-      </section>
-
-      <section id="contact" class="section-contact">
-        <p>contact form</p>
+          <div class="connect-buttons">
+            <div class="connect-btnContainer">
+              <a href="https://discord.gg/D4pN7YNY6Q" target="_blank"
+                >Come join us</a
+              >
+            </div>
+            <div class="connect-btnContainer">
+              <a href="https://airtable.com/shrnwegBhBFQyy7qQ" target="_blank"
+                >Join the roster</a
+              >
+            </div>
+            <div class="connect-btnContainer">
+              <a href="https://airtable.com/shrnwegBhBFQyy7qQ" target="_blank"
+                >Let us know</a
+              >
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <div class="container">Footer</div>
+    </footer>
+
+    <script>
+      const bill = document.querySelector(".hero-bill")
+      const megaphone = document.querySelector(".hero-megaphone")
+      const heart = document.querySelector(".hero-heart")
+      const light = document.querySelector(".hero-light")
+      const school = document.querySelector(".hero-school")
+
+      document.addEventListener("scroll", () => {
+        const scrollY = window.scrollY
+
+        if (scrollY > 100) {
+          bill.style.opacity = 1
+          light.style.opacity = 1
+        }
+
+        if (scrollY > 150) {
+          heart.style.opacity = 1
+        }
+
+        if (scrollY > 250) {
+          megaphone.style.opacity = 1
+          school.style.opacity = 1
+        }
+      })
+    </script>
   </body>
 </html>
